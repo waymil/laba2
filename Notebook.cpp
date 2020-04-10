@@ -1,11 +1,6 @@
 #include "Notebook.h"
 
-Notebook::Notebook()
-{
-    model = "Asus";
-    cpu = "Intel";
-    memory = 6;
-}
+Notebook::Notebook():Notebook("Asus","Intel",6){}
 
 Notebook::Notebook(const char* mod, const char* cpu, int mem)
 {
