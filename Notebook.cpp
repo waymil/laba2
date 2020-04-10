@@ -72,9 +72,11 @@ Notebook&Notebook::operator=(const Notebook &a)
     return *this;
 }
 
-bool Notebook::operator== (const Notebook &a) const
-{
-    return(memory == a.memory);
+bool Notebook::operator== (const Notebook &a) const 
+{ 
+    if (this->memory == a.memory) 
+        return true; 
+    else return false; 
 }
 
 bool Notebook::operator< (const Notebook &a) const
