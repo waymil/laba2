@@ -19,7 +19,10 @@ int main()
     else
     {
         ++one;
-        one.print();
+        if(one == two)
+        {
+            cout << one.getMemory();
+        }
     }
     return 0;
 }
